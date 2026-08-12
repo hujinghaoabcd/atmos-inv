@@ -1,0 +1,21 @@
+# 术语表
+
+- **Prior emission**：反演前排放清单 `E_prior`。
+- **Posterior emission**：卫星/观测约束后的 `E_post`。
+- **Emission correction factor**：乘性校正 `alpha`，本项目以 `exp(log_alpha)` 参数化。
+- **Teacher**：用于训练 neural operator 的 WRF-Chem 模拟，不等于真实大气真值。
+- **Intervention**：主动修改 emission forcing 以产生可识别响应的模拟实验。
+- **Neural operator**：学习状态演化映射，而非只拟合固定输入输出表格关系。
+- **Jacobian / sensitivity**：`dC/dE`，浓度状态对排放变化的响应。
+- **Forward fidelity**：神经模型复制 teacher 状态演化的能力。
+- **Sensitivity fidelity**：神经模型复制 teacher emission response 的能力。
+- **Observation operator**：把模型状态映射至真实观测空间的算子 `H`。
+- **AK**：averaging kernel，卫星 retrieval 垂直敏感性相关量。
+- **AMF**：air mass factor。
+- **VCD**：vertical column density。
+- **PBLH**：planetary boundary layer height。
+- **2D inversion**：不显式解析垂直大气结构或使用简化柱输送表示的反演基线。
+- **3D inversion**：通过显式垂直状态/输送前向算子进行的反演。
+- **OOD**：out-of-distribution，未见区域/天气/排放扰动等。
+- **Twin experiment**：用已知真实参数生成 synthetic observation，再测试反演能否恢复参数。
+- **Manifest**：描述数据/实验版本和 provenance 的不可变元数据记录。
