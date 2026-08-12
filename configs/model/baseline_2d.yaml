@@ -1,0 +1,5 @@
+name: two_dimensional_transport_baseline
+status: planned_baseline
+vertical_layers: 1
+meteorology: near_surface_or_column_representative
+purpose: quantify_incremental_value_of_explicit_3d_transport

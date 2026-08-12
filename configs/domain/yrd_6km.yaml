@@ -1,0 +1,8 @@
+name: yrd_6km
+role: regional_refinement
+horizontal_resolution_km: 6
+region: Yangtze River Delta
+parent_domain: china_12km
+vertical:
+  neural_layers: 8
+projection: inherit_or_freeze_later

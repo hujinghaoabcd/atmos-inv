@@ -1,0 +1,15 @@
+name: tropomi_daily_nox
+observation: TROPOMI_L2_NO2
+frequency: daily
+parameterization: multiplicative_log_correction
+formula: E_post = E_prior * exp(log_alpha)
+spatial_resolution_km: ${domain.horizontal_resolution_km}
+observation_space: native_l2_pixels
+optimize_to_model_grid_first: false
+loss_terms:
+  satellite: true
+  prior: true
+  temporal_regularization: true
+  spatial_regularization: true
+  physics_consistency: true
+  independent_ground: false  # validation by default, not training

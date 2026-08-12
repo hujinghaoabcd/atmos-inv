@@ -1,0 +1,4 @@
+data_root: ${oc.env:ATMOSINV_DATA_ROOT,./_external_data_not_configured}
+scratch_root: ${oc.env:ATMOSINV_SCRATCH_ROOT,./_scratch_not_configured}
+run_root: ${oc.env:ATMOSINV_RUN_ROOT,./_runs_not_configured}
+mlflow_uri: ${oc.env:ATMOSINV_MLFLOW_URI,file:./mlruns}

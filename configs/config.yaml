@@ -1,0 +1,17 @@
+defaults:
+  - paths: default
+  - domain: china_12km
+  - data: china_2021_2023
+  - wrfchem: base
+  - teacher: interventions
+  - model: graph_operator
+  - inversion: tropomi_daily
+  - experiment: bootstrap
+  - _self_
+
+project:
+  name: atmos-inv
+  stage: design_only
+  seed: 42
+
+# Production runs must save the fully resolved Hydra config beside all outputs.

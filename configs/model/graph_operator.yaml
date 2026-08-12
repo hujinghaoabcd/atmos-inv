@@ -1,0 +1,16 @@
+name: graph_neural_chemistry_transport_operator
+status: architecture_not_frozen
+state_species: [NO, NO2, O3]
+forcing:
+  meteorology: [U, V, W, T, RH, PBLH, radiation]
+  emissions: [NOx]
+graph:
+  horizontal: dynamic_physics_initialized
+  vertical: dynamic_physics_initialized
+  learned_residual_connectivity: true
+  multiscale: true
+latent_dim: 128
+message_passing_steps: null
+chemistry_operator: local_learned_operator
+rollout_hours: null
+conservation_constraints: to_be_designed

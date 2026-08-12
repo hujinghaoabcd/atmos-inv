@@ -1,0 +1,10 @@
+name: china_12km
+role: national_main
+horizontal_resolution_km: 12
+# Download/analysis envelope only; final WRF Lambert domain must be generated and recorded separately.
+analysis_bbox_lonlat: [65.0, 10.0, 145.0, 60.0]
+vertical:
+  wrfchem_native_levels: null  # freeze after WRF-Chem configuration
+  neural_layers: 6
+multiscale_graph_km: [12, 36, 108]
+projection: null  # TODO during WRF domain design

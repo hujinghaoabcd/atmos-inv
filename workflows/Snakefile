@@ -1,0 +1,21 @@
+# AtmosInv workflow entry point.
+# Production atmospheric rules are intentionally not executable until their
+# protocols and configs are frozen. This bootstrap target only validates layout.
+
+rule all:
+    input:
+        "build/bootstrap.ok"
+
+rule bootstrap_check:
+    output:
+        "build/bootstrap.ok"
+    shell:
+        "python scripts/check_project.py && mkdir -p build && echo OK > {output}"
+
+# Future rule modules will be activated stage-by-stage.
+# include: "rules/data.smk"
+# include: "rules/wrfchem.smk"
+# include: "rules/teacher.smk"
+# include: "rules/train.smk"
+# include: "rules/inversion.smk"
+# include: "rules/evaluation.smk"

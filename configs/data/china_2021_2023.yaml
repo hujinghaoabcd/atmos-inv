@@ -1,0 +1,16 @@
+period:
+  start: 2021-01-01
+  end: 2023-12-31
+satellite:
+  primary: tropomi_no2_l2
+  optional: gems_no2_l2
+meteorology:
+  wrf_driver: era5
+anthropogenic_emissions:
+  china_prior: meic_2020
+  external_domain: cams_glob_ant
+chemical_boundary:
+  source: undecided  # freeze together with WRF-Chem chem_opt
+validation:
+  surface: cnemc_hourly_no2_o3
+  column_optional: [pandora, max_doas]

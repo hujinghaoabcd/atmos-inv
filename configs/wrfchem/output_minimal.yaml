@@ -1,0 +1,8 @@
+# Planned post-extraction contract; exact WRF variable names depend on configuration.
+meteorology_3d: [U, V, W, T, pressure, water_vapor]
+meteorology_2d: [PBLH, SWDOWN, PSFC]
+chemistry_core: [NO, NO2, O3]
+chemistry_extended_candidate: [HNO3, PAN, HCHO, CO]
+policy:
+  preserve_full_wrfout: temporary_only
+  long_term_format: zarr_or_compressed_netcdf

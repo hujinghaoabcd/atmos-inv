@@ -1,0 +1,12 @@
+experiment_id: E000
+title: Repository bootstrap
+status: prepared
+scientific_claim_allowed: false
+inputs: []
+outputs:
+  - repository_skeleton
+  - design_documents
+  - configuration_contracts
+acceptance:
+  - lightweight_pytest_passes
+  - repository_structure_check_passes

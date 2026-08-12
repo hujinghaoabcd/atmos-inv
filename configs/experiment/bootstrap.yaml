@@ -1,0 +1,6 @@
+id: E000
+family: bootstrap
+stage: design_only
+allow_large_compute: false
+allow_external_download: false
+notes: Repository preparation only. No scientific result can be claimed from this config.

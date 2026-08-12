@@ -1,0 +1,11 @@
+experiment_id,family,status,title,config,teacher_version,git_sha,run_id,primary_metric,paper_target,notes
+E000,bootstrap,prepared,Repository bootstrap,experiment/bootstrap,,,,,,Design-only
+E100,teacher,planned,WRF-Chem baseline,,,,,,,Freeze physics and chemistry setup first
+E120,teacher,planned,Emission intervention ensemble,,,,,,,Must identify dC/dE
+E200,forward,planned,Neural operator forward fidelity,,,,,,,State/profile/column fidelity
+E300,jacobian,planned,Emission-sensitivity fidelity,,,,,,,Gate before inversion
+E400,inversion,planned,TROPOMI daily NOx inversion,,,,,,,Posterior emissions
+E500,mechanism,planned,2D versus 3D inversion bias,,,,,,,Primary science question
+E600,generalization,planned,Leave-one-region-out generalization,,,,,,,Unseen geography
+E700,ablation,planned,Physics and architecture ablations,,,,,,,Attribution of gains
+E900,reproduction,planned,Paper reproduction suite,,,,,,,Final immutable evidence

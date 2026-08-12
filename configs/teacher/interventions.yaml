@@ -1,0 +1,14 @@
+name: emission_intervention_teacher
+baseline_required: true
+seasonal_episode_target_days: 40
+perturbation_design:
+  global_scalings: [0.5, 0.75, 1.25, 1.5]
+  spatial_perturbations: true
+  sector_perturbations: true
+  temporal_perturbations: true
+  design_method: to_be_frozen
+sensitivity_target: dC_dE
+split_policy:
+  hold_out_weather_regimes: true
+  hold_out_regions: true
+  hold_out_perturbation_patterns: true
