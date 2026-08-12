@@ -1,5 +1,7 @@
 # AtmosInv
 
+[中文说明 / Chinese overview](README.zh-CN.md) · [Research documentation](docs/README.md)
+
 **Satellite-constrained 3D graph neural atmospheric operator for national-scale NOx emission inversion**
 
 > **Project state:** design and preparation. The scientific plan, data contracts, model interfaces, experiment registry, and reproducibility workflow are prepared in advance; production data download and large-scale WRF-Chem experiments have **not** started.
