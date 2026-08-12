@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use AtmosInv or its released research artifacts, please cite the associated paper/release."
+title: "AtmosInv: Satellite-constrained 3D neural atmospheric inversion research framework"
+type: software
+authors:
+  - family-names: Hu
+    given-names: Jinghao
+repository-code: "https://github.com/hujinghaoabcd/atmos-inv"
+version: 0.1.0
+license: "NOASSERTION"

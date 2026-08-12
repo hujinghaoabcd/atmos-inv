@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AtmosInv Dataset Manifest",
+  "type": "object",
+  "required": ["dataset_id", "product", "version", "start_date", "end_date", "source"],
+  "properties": {
+    "dataset_id": {"type": "string"},
+    "product": {"type": "string"},
+    "version": {"type": "string"},
+    "start_date": {"type": "string"},
+    "end_date": {"type": "string"},
+    "spatial_scope": {"type": "string"},
+    "source": {"type": "string"},
+    "checksum_index": {"type": ["string", "null"]},
+    "parent_manifest": {"type": ["string", "null"]},
+    "processing_git_sha": {"type": ["string", "null"]},
+    "notes": {"type": "string"}
+  },
+  "additionalProperties": true
+}

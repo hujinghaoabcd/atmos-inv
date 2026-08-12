@@ -35,21 +35,14 @@ ml = [
   "torch-geometric>=2.5",
   "scikit-learn>=1.4",
 ]
-workflow = [
-  "snakemake>=8,<10",
-]
-tracking = [
-  "mlflow>=2.12",
-]
+workflow = ["snakemake>=8,<10"]
+tracking = ["mlflow>=2.12"]
 dev = [
   "pytest>=8",
   "pytest-cov>=5",
   "ruff>=0.6",
   "mypy>=1.10",
   "pre-commit>=3.7",
-]
-full = [
-  "atmos-inv[data,geo,ml,workflow,tracking,dev]",
 ]
 
 [project.scripts]
